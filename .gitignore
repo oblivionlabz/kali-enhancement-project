@@ -1,0 +1,24 @@
+# Secrets / fingerprints — never commit
+service-credentials.md
+*.env
+*.key
+*.pem
+*.p12
+
+# Raw system-identifying artifacts
+raw-data/hardware-info.txt
+raw-data/network-config.txt
+raw-data/tool-verification-*.txt
+
+# Timestamped install/upgrade logs (noise, may leak path info)
+install-*.log
+upgrade-*.log
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
